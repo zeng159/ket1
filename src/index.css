@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans SC", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "ZCOOL KuaiLe", cursive;
+  
+  --color-space-dark: #0f172a;
+  --color-space-blue: #1e293b;
+  --color-space-accent: #38bdf8;
+  --color-space-gold: #fbbf24;
+}
+
+body {
+  @apply bg-space-dark text-white font-sans;
+  background-image: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  min-height: 100vh;
+}
+
+.card-shadow {
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+}
+
